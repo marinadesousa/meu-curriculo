@@ -1,0 +1,13 @@
+/* Comentário no CSS */
+
+body {
+    width: 90vw; /* vw: viewport width */
+    margin: auto; /* margem com ajuste automático */
+    font-size: 16px;
+
+}
+
+section {
+    background-color: lightgray;
+    padding: 40px; /* preechimento [interno] */
+}
