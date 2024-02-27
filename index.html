@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Currículo</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <style>
             h1 {
@@ -13,35 +14,38 @@
 </head>
 <body>
          <header>
-            <h1> Marina de Sousa Pereira</h1>
+            <h1 class=" nome curriculo"> Marina de Sousa Pereira</h1>
             <hr>
         </header>
 
-        <section>
-            <h2>Apresentação</h2>
-            <h3>Sobre mim</h3>
-            <p>Eu sou a Marina, tenho  17 anos, nascida no dia 14/08/2006, moro em Serraria, Diadema-SP, 
-                sou estudante do ensino médio e faço curso de Programação Front-end no SENAI-SP.</p>
-            <p>Sou uma pessoa tímida, mas não tenho problema em falar em grupo, estou trablhando para melhorar e ja vejo resultado</p>    
-            <h2>Para entrar em contato</h2>
-            <p>Pode conversar comigo enviando um email para <a href="malito:sousamarina224@gmail.com">sousamarina224@gmail.com</a> ou 
-            pode ligar para o número <a href="tel:+5511949155712">(11) 94915-5712</a> ou me enviando uma mensagem no<a href="https://wa.me/+5511949155712">WhatsApp</a></p>
-        </section>
+        <div>
+            <section id="apresentacao"> 
+                <h2 class="titulo-secao">Apresentação</h2>
+                <h3>Sobre mim</h3>
+                <p>Eu sou a Marina, tenho  17 anos, nascida no dia 14/08/2006, moro em Serraria, Diadema-SP, 
+                    sou estudante do ensino médio e faço curso de Programação Front-end no SENAI-SP.</p>
+                <p>Sou uma pessoa tímida, mas não tenho problema em falar em grupo, estou trablhando para melhorar e ja vejo resultado</p>    
+                <h2>Para entrar em contato</h2>
+                <p>Pode conversar comigo enviando um email para <a href="malito:sousamarina224@gmail.com">sousamarina224@gmail.com</a> ou 
+                    pode ligar para o número <a href="tel:+5511949155712">(11) 94915-5712</a> ou me enviando uma mensagem no <a href="https://wa.me/+5511949155712">WhatsApp</a></p>
+
+            </section>
+        </div>
         
         <div>
-        <section>
-                <h2>Formação Acadêmica</h2>
+        <section id="formacaoACademica">
+                <h2 class="titulo-secao">Formação Acadêmica</h2>
                     <p>Inglês</p>
                     <p>Particular - em casa</p>
                     <p>Ago/2019</p>
                     <p>2anos</p>
-                    <p>Neste curso aprendi a pronunciar palavras que tinha dificuldades, verbo to be, a conversar, ler e etc.</p>
+                    <p>Neste curso aprendi a pronunciar palavras que havia dificuldade, verbo to be, a conversar, ler e etc.</p>
         </section>
         </div>
         
         <div> 
-        <section>
-            <h2>Formação Acadêmica</h2>
+        <section id="formacacao">
+            <h2 class="titulo-secao">Formação Acadêmica</h2>
             <p> Programação Front-end</p>
             <p>SENAI-SP</p>
             <p>jan/2024 - atualmente</p>
@@ -49,17 +53,17 @@
         </div>
         
         <div>
-        <section>
-            <h2>Experiência profissional</h2>
+        <section id="experiencia">
+            <h2 class="titulo-secao">Experiência profissional</h2>
 
-            <h3>Trabalho voluntário</h3>
+            <p>Trabalho voluntário</p>
             <p>Arrecadação de alimento - Av. Dona Ruyce Ferraz Alvim, Serraria, Diadema-sp.</p>
         </section>
         </div>
 
         <div>
-        <section>
-            <h2>Competências técnicas</h2>
+        <section id="hardskills">
+            <h2 class="titulo-secao">Competências técnicas</h2>
 
                 <ul>
                     <li>HTML</li>
@@ -73,22 +77,23 @@
         </section>
         </div>
 
-        <section>
-            <h2>Soft Skills</h2>
+        <div>
+            <section id="softskills">
+                    <h2 class="titulo-secao"> Softs Skills</h2>
+                <ul>
+                    <li>Empatia</li>
+                    <li>Bom relacionamentos interpessoal, trabalho em equipe, liderança</li>
+                    <li>Resiliência e foco</li>
+                    <li>Facilidade</li>
+                    <li>Gestão do tempo</li>
+                    <li>Comunicação assertiva</li>
+                </ul>
+            </section>
+        </div>
 
-            <ul>
-                <li>Empatia</li>
-                <li>Bom relacionamentos interpessoal, trabalho em equipe, liderança</li>
-                <li>Resiliência e foco</li>
-                <li>Facilidade</li>
-                <li>Gestão do tempo</li>
-                <li>Comunicação assertiva</li>
-            </ul>
-        </section>
-
-       <section>
-            <div>
-                <h2>Idiomas que eu falo</h2>
+        <div>
+            <section id="idiomas">
+                <h2 class="titulo-secao">Idiomas que eu falo</h2>
 
                 <table>
                     <tr> <!-- tr: table row (linha de tabela) -->
@@ -99,7 +104,6 @@
                         Nível
                     </th>   
                     </tr>
-                    
                     <tr>
                         <td>Português (BR)</td> <!-- td: table data (dado de tabela)-->
                         <td>Nativo</td>
@@ -114,9 +118,9 @@
                         <td>Espanhol</td>
                         <td>Básico</td>
                     </tr>
-                </table>
-            </div>
-        </section>
-
+                    </table>
+            </section>
+        </div>
+    
 </body>
 </html>

@@ -1,13 +1,57 @@
-/* Comentário no CSS */
-
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap');
+ 
 body {
     width: 90vw; /* vw: viewport width */
     margin: auto; /* margem com ajuste automático */
-    font-size: 16px;
+    font-size: 20px; /* o padrão é 16px */
+    font-family: "Asap", sans-serif;
+    font-weight: 250;
+}
 
+.nome-curriculo {
+    font-family: "Asap", sans-serif;
+    font-size: 4rem;
+    margin-top: 4rem ;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
 }
 
 section {
-    background-color: lightgray;
     padding: 40px; /* preechimento [interno] */
 }
+
+section#apresentacao {
+    background-color: rgb(252, 204, 237);
+}
+
+section#formacaoACademica {
+    background-color: rgb(251, 176, 176);
+}
+
+section#formacacao { 
+    background-color: lightpink;
+}
+
+section#experiencia {
+    background-color: lightsalmon;
+}
+
+section#hardskills {
+    background-color: lightskyblue;
+}
+
+section#softskills {
+    background-color: lightgreen;
+}
+
+section#idiomas { 
+    background-color: lightgoldenrodyellow;
+}
+
+.titulo-secao {
+    text-transform: uppercase; /* transforma o texto em maiúscula */
+    font-family: "Asap", sans-serif;
+    color: darkorchid;
+}
+
