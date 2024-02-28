@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
 }
 
 body {
-    width: 90vw; /* vw: viewport width */
+    width: 70vw; /* vw: viewport width */
     margin: auto; /* margem com ajuste automático */
-    font-size: 20px; /* o padrão é 16px */
+    font-size: 15px; /* o padrão é 16px */
     font-family: "Asap", sans-serif;
-    font-weight: 250;
+    font-weight: 160;
 }
 
-.nome-curriculo {
-    font-family: "Open Sans", sans-serif;
-    font-size: 3rem;
-    margin-top: 4rem ;
-    margin-right: 4rem;
-    margin-bottom: 4rem;
-    margin-left: 4rem;
+.nomecurriculo {
+    font-family: "PT Serif", serif;
+    font-size: 4rem;
+    text-shadow: 3px 3px 3px grey;
+    border-radius: 60px;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
 }
 
 section {
@@ -51,18 +52,40 @@ section#softskills {
 }
 
 section#idiomas { 
-    background-color: lightskyblue;
+    background-color: lightblue;
 }
 
 .titulo-secao {
     text-transform: uppercase; /* transforma o texto em maiúscula */
     font-family: "Asap", sans-serif;
     color: darkorchid;
-    font-size: 4rem;  
+    font-size: 2rem;  
     margin: 1rem 0 1rem 0 ;  /* valores: cima direita baixo esquerda */
-    padding: 1rem;
+    padding: 1rem; /* valores: cima direita baixo esquerda */
+
+}
+p{
+ line-height: 1,5; /* altura da linha: 1,5x o tamanho padrão */
+ margin: 1rem 0 1rem 0; /* valores: cima-baixo esquerda-direita */
 }
 
-p{
-    line-height: 1.5; /* altura da linha: 1.5x o tamanho padrão*/
+h3{ 
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform:  uppercase;
+    margin: 1rem 0; 
+}
+
+.tabela,th,td{
+    border-collapse: collapse; /*define a separação entre as bordar*/
+    padding: 10px;
+    text-align: left;
+}
+th{
+    border: 1px solid black;
+    background-color: rgb(252, 215, 215);
+   text-align:center ;
+}
+td{
+    border: 1px solid black;
 }
