@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap');
- 
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
+}
+
 body {
     width: 90vw; /* vw: viewport width */
     margin: auto; /* margem com ajuste automático */
@@ -9,8 +14,8 @@ body {
 }
 
 .nome-curriculo {
-    font-family: "Asap", sans-serif;
-    font-size: 4rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
     margin-top: 4rem ;
     margin-right: 4rem;
     margin-bottom: 4rem;
@@ -34,24 +39,30 @@ section#formacacao {
 }
 
 section#experiencia {
-    background-color: lightsalmon;
+    background-color: lightgrey;
 }
 
 section#hardskills {
-    background-color: lightskyblue;
+    background-color: lightsalmon;
 }
 
 section#softskills {
-    background-color: lightgreen;
+    background-color: lightgoldenrodyellow;
 }
 
 section#idiomas { 
-    background-color: lightgoldenrodyellow;
+    background-color: lightskyblue;
 }
 
 .titulo-secao {
     text-transform: uppercase; /* transforma o texto em maiúscula */
     font-family: "Asap", sans-serif;
     color: darkorchid;
+    font-size: 4rem;  
+    margin: 1rem 0 1rem 0 ;  /* valores: cima direita baixo esquerda */
+    padding: 1rem;
 }
 
+p{
+    line-height: 1.5; /* altura da linha: 1.5x o tamanho padrão*/
+}
