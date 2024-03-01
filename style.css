@@ -1,5 +1,13 @@
+/* @TODO Otimizar a importação das fontes com um único link*/
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* pt-> Pontos de tipografia padrão ABNT -> Arial 12pt
+mm -> milímetro
+cm-> centrímetro */ 
+
+/* Alguns valores de propriedades não tem unidade de medida.
+   Exemplo: line-height, aspect-ratio, font-weight */
+  
 :root {
     font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
 }
@@ -54,6 +62,35 @@ section#softskills {
 section#idiomas { 
     background-color: lightblue;
 }
+
+#tecnologias { 
+    display: flex; /* exibe como a caixa flexível (Flexbox)*/
+    /* Flexbox tem várias propriedades que trabalham junto*/
+    justify-content: space-evenly; /* alinha o conteúdo no eixo principal*/
+}
+
+/* Combinadores*/
+
+article h1 { /* h1 descendente de article*/
+    font-size: 2rem;
+    font-weight: bold; /* bold = 700*/
+}
+
+article h2 { /* h2 descendente de article*/
+    font-size: 1.5rem;
+    font-weight: 600; /* demi-bol ( quase negrito)*/
+
+}
+
+article p {
+    text-align: justify;
+
+}
+
+article {
+    width: 30%; /* do pai ( section id="tecnologias") */
+}
+
 
 .titulo-secao {
     text-transform: uppercase; /* transforma o texto em maiúscula */
