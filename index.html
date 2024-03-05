@@ -127,10 +127,13 @@
                 <header>
                     <h1>Aprendendo HTML</h1>
                     <h2>Criando a página com HTML semântico</h2>
-                    <p>Marina de Sousa</p>
-                    <p>1º mar 2024</p>
-                    <p>Nesta página, apesar de não ficar visível para o usuário, a 
-                        estrutura do HTML segue um padrão semântico em que... <span><a href="#">Continue lendo</a></span></p>
+                    <span class="autor">Marina de Sousa</span>
+                    <span class="data">1º mar 2024</span>
+                    <p>Nesta página, apesar de não ficar visível para o usuário,
+                    a estrutura do HTML segue um padrão semantico em que...</p> 
+                    <span class="continue-lendo"><a 
+                    href="#softskills">Continue lendo</a></span>
+                        <!-- #id -> ancoramento-->
                 </header>
             </article>
 
@@ -138,27 +141,18 @@
                 <header>
                     <h1>Quando cai o VT?</h1>
                     <h2>Gerenciando suas próprias expectativas</h2>
-                   <span>Marina de Sousa</span> 
-                    <span>1º mar 2024</span>
-                    <p>Aprendendo a gerenciar as expectativas e a ansiedade enquanto 
-                        aguardamos o tão esperado momento quando...<span> <a
-                        href="#">Continue lendo</a></span></p>
-                </header>
-                </article>
-
-            <article>
-                <header>
-                    <h1>Sextou, família</h1>
-                    <h2>A dúvida é se tem happy hour com o VT</h2>
-                    <span>Marina de Sousa</span>
-                    <span>1º mar 2024</span>
-                    <p> Sextou na área e o astral tá lá em cima! Que comece a diversão com limites! </p>
-                    
+                   <span class="autor">Marina de Sousa</span> 
+                    <span class="data">1º mar 2024</span>
+                    <p>Aprendendo a gerenciar as expectativas e 
+                    a ansiedade enquanto aguardamos 
+                    o tão esperado momento quando...</p>
+                    <span class="continue-lendo"><a 
+                    href="#hardskills">Continue lendo</a></span>
                 </header>
             </article>
-            
-            <style>
-                blockquote:before,
+
+                <style> 
+                    blockquote:before,
                 q:before {
 	                content: "<";
                 }
@@ -167,7 +161,7 @@
                 q:after {
 	                content: ">";
                 }
-            </style>
+                </style>
 
              <!--<q>Suponho que me entender não é uma questão de inteligência e sim de sentir, 
                 de entrar em contato...

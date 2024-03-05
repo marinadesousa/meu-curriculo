@@ -23,7 +23,7 @@ body {
 .nomecurriculo {
     font-family: "PT Serif", serif;
     font-size: 4rem;
-    text-shadow: 3px 3px 3px grey;
+    text-shadow: 2px 2px 2px grey;
     border-radius: 60px;
     margin-top: 3rem;
     margin-right: 3rem;
@@ -36,37 +36,42 @@ section {
 }
 
 section#apresentacao {
-    background-color: rgb(252, 204, 237);
+    background-color: #fed9df
 }
 
 section#formacaoACademica {
-    background-color: rgb(251, 176, 176);
+    background-color: #fbd3d3;
 }
 
 section#formacacao { 
-    background-color: lightpink;
+    background-color: #f2bdc5
 }
 
 section#experiencia {
-    background-color: lightgrey;
+    background-color: #f4b8c1;
 }
+/* @TODO
+    1. estilizar as demais seçoes
+    2. estilizar elementos article
+    3. tirar as sombras de texto
+    */
 
 section#hardskills {
-    background-color: lightsalmon;
+    background-color: #ffafbb
 }
 
 section#softskills {
-    background-color: lightgoldenrodyellow;
+    background-color: #f5a4b0
 }
 
 section#idiomas { 
-    background-color: lightblue;
+    background-color: #ffb6c1
 }
 
 #tecnologias { 
     display: flex; /* exibe como a caixa flexível (Flexbox)*/
     /* Flexbox tem várias propriedades que trabalham junto*/
-    justify-content: space-evenly; /* alinha o conteúdo no eixo principal*/
+    justify-content: space-between; /* alinha o conteúdo no eixo principal*/
 }
 
 /* Combinadores*/
@@ -74,28 +79,55 @@ section#idiomas {
 article h1 { /* h1 descendente de article*/
     font-size: 2rem;
     font-weight: bold; /* bold = 700*/
+    margin: 0 0 1rem 0;
 }
 
 article h2 { /* h2 descendente de article*/
     font-size: 1.5rem;
     font-weight: 600; /* demi-bol ( quase negrito)*/
+    margin: 0 0 1rem 0
 
+}
+
+.autor {
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 80%;   
+}
+.data {
+    font-style: oblique;
+    font-size: 80%;
+}
+
+.continue-lendo {
+    background-color: darkred;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.continue-lendo a {
+    color: #ffffffff;
+    text-decoration: none;
 }
 
 article p {
     text-align: justify;
+    margin-bottom: 1rem;
 
 }
 
 article {
     width: 30%; /* do pai ( section id="tecnologias") */
+    background-color: #cecece;
+    padding: .5rem 1rem;
 }
 
 
 .titulo-secao {
     text-transform: uppercase; /* transforma o texto em maiúscula */
     font-family: "Asap", sans-serif;
-    color: darkorchid;
+    color: #af3be8;
     font-size: 2rem;  
     margin: 1rem 0 1rem 0 ;  /* valores: cima direita baixo esquerda */
     padding: 1rem; /* valores: cima direita baixo esquerda */
@@ -120,8 +152,8 @@ h3{
 }
 th{
     border: 1px solid black;
-    background-color: rgb(252, 215, 215);
-   text-align:center ;
+    background-color: #f7edef;
+    text-align: center;
 }
 td{
     border: 1px solid black;
