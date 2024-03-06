@@ -10,11 +10,15 @@ cm-> centrímetro */
   
 :root {
     font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
+    scroll-behavior: smooth; /* tamanho base do rem -> 1rem = 16px*/
+    --cor-primaria-texto: #030101;
+    color: var(--cor-primaria-texto);
 }
 
 body {
     width: 70vw; /* vw: viewport width */
     margin: auto; /* margem com ajuste automático */
+    border-radius: 90px;
     font-size: 15px; /* o padrão é 16px */
     font-family: "Asap", sans-serif;
     font-weight: 160;
@@ -29,43 +33,55 @@ body {
     margin-right: 3rem;
     margin-bottom: 3rem;
     margin-left: 3rem;
+    color: var(--cor-primaria-texto);
+    /* shorthand para margin-top margin-right margin-bottom margin-left*/
 }
 
 section {
-    padding: 40px; /* preechimento [interno] */
+    padding: 20px 0; /* preechimento [interno] */
 }
 
 section#apresentacao {
-    background-color: #fed9df
+    background-color: rgb(245, 110, 133);
 }
 
 section#formacaoACademica {
-    background-color: #fbd3d3;
+    background-color:rgb(232, 144, 158);
 }
 
 section#formacacao { 
-    background-color: #f2bdc5
+    background-color: rgb(244, 150, 164);
 }
 
 section#experiencia {
-    background-color: #f4b8c1;
+    background-color: rgb(236, 141, 155);
+}
+
+#apresentacao, 
+#formacaoACademica, 
+#formacacao, 
+#experiencia, 
+#hardskills, 
+#softskills, 
+#idiomas {
+    padding: 40px;
 }
 /* @TODO
-    1. estilizar as demais seçoes
-    2. estilizar elementos article
-    3. tirar as sombras de texto
+    1. estilizar as demais seçoes - ok
+    2. estilizar elementos article - ok 
+    3. tirar as sombras de texto - ok
     */
 
 section#hardskills {
-    background-color: #ffafbb
+    background-color: rgb(250, 154, 170)
 }
 
 section#softskills {
-    background-color: #f5a4b0
+    background-color: rgb(231, 148, 160)
 }
 
 section#idiomas { 
-    background-color: #ffb6c1
+    background-color: rgb(237, 182, 190)
 }
 
 #tecnologias { 
@@ -100,34 +116,31 @@ article h2 { /* h2 descendente de article*/
 }
 
 .continue-lendo {
-    background-color: darkred;
+    background-color: #762060;
     padding: .5rem 1rem;
     margin-top: 2rem;
     border-radius: 8px;
-}
-
-.continue-lendo a {
-    color: #ffffffff;
+    color: #7d2828;
     text-decoration: none;
 }
 
 article p {
-    text-align: justify;
+    text-align: left;
     margin-bottom: 1rem;
-
 }
 
 article {
     width: 30%; /* do pai ( section id="tecnologias") */
     background-color: #cecece;
     padding: .5rem 1rem;
+    border-radius: 5px;
 }
 
 
 .titulo-secao {
     text-transform: uppercase; /* transforma o texto em maiúscula */
     font-family: "Asap", sans-serif;
-    color: #af3be8;
+    color: #030101;
     font-size: 2rem;  
     margin: 1rem 0 1rem 0 ;  /* valores: cima direita baixo esquerda */
     padding: 1rem; /* valores: cima direita baixo esquerda */
@@ -143,6 +156,14 @@ h3{
     font-weight: 200;
     text-transform:  uppercase;
     margin: 1rem 0; 
+} 
+
+.lista-tags li {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 0;
 }
 
 .tabela,th,td{
@@ -151,8 +172,8 @@ h3{
     text-align: left;
 }
 th{
-    border: 1px solid black;
-    background-color: #f7edef;
+    border: 1px solid #000000;
+    background-color: #ffffff;
     text-align: center;
 }
 td{
