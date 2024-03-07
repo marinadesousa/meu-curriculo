@@ -12,9 +12,25 @@ cm-> centrímetro */
     font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
     scroll-behavior: smooth; /* tamanho base do rem -> 1rem = 16px*/
     --cor-primaria-texto: #030101;
+    --cor-fundo-tags:  #ffffff;
     color: var(--cor-primaria-texto);
+    --padding-padrao-secao: 40px;
 }
 
+[data-tema="light"] {
+    --planofundo: #ffffff;
+    --cor-primaria-texto: #bebebe;
+    --cor-fundo-tags: #353535;
+    --cor-fundo-apresentacao:  #ee2a4a;
+}
+
+[data-tema="dark"] {
+        --planofundo: #353535;
+        --cor-primaria-texto: #bebebe;
+        --cor-fundo-tags: #353535;
+        --cor-fundo-apresentacao:  #ee2a4a;
+}
+   
 body {
     width: 70vw; /* vw: viewport width */
     margin: auto; /* margem com ajuste automático */
@@ -22,6 +38,7 @@ body {
     font-size: 15px; /* o padrão é 16px */
     font-family: "Asap", sans-serif;
     font-weight: 160;
+    background-color: var(--planofundo);
 }
 
 .nomecurriculo {
@@ -38,23 +55,28 @@ body {
 }
 
 section {
-    padding: 20px 0; /* preechimento [interno] */
+    padding: 20px 0; 
+    /* preechimento [interno] */
 }
 
 section#apresentacao {
-    background-color: rgb(245, 110, 133);
+  background-color: var(--cor-fundo-apresentacao);
 }
 
 section#formacaoACademica {
-    background-color:rgb(232, 144, 158);
+    background-color: rgb(232, 144, 158);
+}
+
+section#formacaoACademica p {
+    margin-left: 50px;
 }
 
 section#formacacao { 
-    background-color: rgb(244, 150, 164);
+    background-color: rgb(222, 137, 150);
 }
 
 section#experiencia {
-    background-color: rgb(236, 141, 155);
+    background-color: rgb(218, 127, 141);
 }
 
 #apresentacao, 
@@ -64,8 +86,9 @@ section#experiencia {
 #hardskills, 
 #softskills, 
 #idiomas {
-    padding: 40px;
+    padding: var (--padding-padrao-secao);
 }
+
 /* @TODO
     1. estilizar as demais seçoes - ok
     2. estilizar elementos article - ok 
@@ -77,11 +100,11 @@ section#hardskills {
 }
 
 section#softskills {
-    background-color: rgb(231, 148, 160)
+    background-color: rgb(249, 171, 183)
 }
 
 section#idiomas { 
-    background-color: rgb(237, 182, 190)
+    background-color: rgb(241, 152, 166)
 }
 
 #tecnologias { 
@@ -116,17 +139,24 @@ article h2 { /* h2 descendente de article*/
 }
 
 .continue-lendo {
-    background-color: #762060;
+    background-color: #808080;
     padding: .5rem 1rem;
     margin-top: 2rem;
     border-radius: 8px;
-    color: #7d2828;
+    color: #fafad2;
+    text-decoration: none;
+}
+
+.continue-lendo a {
+    color: #fafad2;
     text-decoration: none;
 }
 
 article p {
     text-align: left;
-    margin-bottom: 1rem;
+    height: 100px;
+    margin-bottom: 2rem;
+    overflow: hidden;
 }
 
 article {
@@ -163,13 +193,14 @@ h3{
     background-color: #ffffff;
     padding: 5px;
     border-radius: 4px;
-    margin: 5px 0;
+    margin: 6px 0;
 }
 
 .tabela,th,td{
     border-collapse: collapse; /*define a separação entre as bordar*/
     padding: 10px;
     text-align: left;
+    margin: 40px;
 }
 th{
     border: 1px solid #000000;
