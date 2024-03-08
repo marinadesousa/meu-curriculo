@@ -11,25 +11,27 @@ cm-> centrímetro */
 :root {
     font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
     scroll-behavior: smooth; /* tamanho base do rem -> 1rem = 16px*/
-    --cor-primaria-texto: #030101;
+    --cor-primaria-texto: #141010;
     --cor-fundo-tags:  #ffffff;
     color: var(--cor-primaria-texto);
     --padding-padrao-secao: 40px;
 }
 
 [data-tema="light"] {
-    --planofundo: #ffffff;
-    --cor-primaria-texto: #bebebe;
-    --cor-fundo-tags: #353535;
-    --cor-fundo-apresentacao:  #ee2a4a;
+     --planofundo: #ffffff;
+     --cor-primaria-texto: #cecece;
+     --cor-fundo-tags: #111010;
+     --cor-fundo-apresentacao: #a04f4f;
+     --cor-fundo-formacaoACademica: #d6334c;
 }
 
 [data-tema="dark"] {
-        --planofundo: #353535;
+        --planofundo: #141010;
         --cor-primaria-texto: #bebebe;
-        --cor-fundo-tags: #353535;
-        --cor-fundo-apresentacao:  #ee2a4a;
-}
+        --cor-fundo-tags: #111010;
+        --cor-fundo-apresentacao: #a04f4f;
+        --cor-fundo-formacaoACademica: #d6334c;
+}    
    
 body {
     width: 70vw; /* vw: viewport width */
@@ -62,6 +64,10 @@ section {
 section#apresentacao {
   background-color: var(--cor-fundo-apresentacao);
 }
+section#apresentacao p {
+    margin-left: 50px;
+}
+
 
 section#formacaoACademica {
     background-color: rgb(232, 144, 158);
@@ -72,7 +78,7 @@ section#formacaoACademica p {
 }
 
 section#formacacao { 
-    background-color: rgb(222, 137, 150);
+    background-color: var(--cor-fundo-formacaoACademica);
 }
 
 section#experiencia {
@@ -125,6 +131,7 @@ article h2 { /* h2 descendente de article*/
     font-size: 1.5rem;
     font-weight: 600; /* demi-bol ( quase negrito)*/
     margin: 0 0 1rem 0
+    margin-left
 
 }
 
@@ -186,6 +193,7 @@ h3{
     font-weight: 200;
     text-transform:  uppercase;
     margin: 1rem 0; 
+    margin-left: 50px;
 } 
 
 .lista-tags li {
