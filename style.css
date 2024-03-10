@@ -18,20 +18,30 @@ cm-> centrímetro */
 }
 
 [data-tema="light"] {
-     --planofundo: #ffffff;
-     --cor-primaria-texto: #cecece;
+     --planofundo: #f6f6f6;
+     --cor-primaria-texto: #bebebe;
      --cor-fundo-tags: #111010;
-     --cor-fundo-apresentacao: #a04f4f;
-     --cor-fundo-formacaoACademica: #d6334c;
+     --cor-fundo-apresentacao:  #6A5ACD ; 
+     --cor-fundo-formacaoACademica: #836FFF;
+     --cor-fundo-formacao: #6959CD;
+     --cor-fundo-experiencia:#483D8B ;
+     --cor-fundo-hardskills:#6495ED ;
+     --cor-fundo-softskills:#4169E1 ;
+     --cor-fundo-idiomas:#1E90FF ;
 }
 
 [data-tema="dark"] {
         --planofundo: #141010;
         --cor-primaria-texto: #bebebe;
         --cor-fundo-tags: #111010;
-        --cor-fundo-apresentacao: #a04f4f;
-        --cor-fundo-formacaoACademica: #d6334c;
-}    
+        --cor-fundo-apresentacao:  #6A5ACD ; 
+        --cor-fundo-formacaoACademica: #836FFF;
+        --cor-fundo-formacao: #6959CD;
+        --cor-fundo-experiencia:#483D8B ;
+        --cor-fundo-hardskills:#6495ED ;
+        --cor-fundo-softskills:#4169E1 ;
+        --cor-fundo-idiomas:#1E90FF ;
+}
    
 body {
     width: 70vw; /* vw: viewport width */
@@ -46,11 +56,11 @@ body {
 .nomecurriculo {
     font-family: "PT Serif", serif;
     font-size: 4rem;
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: 2px 2px 2px #708090 ;	
     border-radius: 60px;
     margin-top: 3rem;
     margin-right: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3 rem;
     margin-left: 3rem;
     color: var(--cor-primaria-texto);
     /* shorthand para margin-top margin-right margin-bottom margin-left*/
@@ -62,37 +72,47 @@ section {
 }
 
 section#apresentacao {
-  background-color: var(--cor-fundo-apresentacao);
+  background-color: var(--cor-fundo-apresentacao) ;
 }
+
 section#apresentacao p {
-    margin-left: 50px;
+    margin-left: 50px ;
 }
 
 
 section#formacaoACademica {
-    background-color: rgb(232, 144, 158);
+    background-color: var(--cor-fundo-formacaoACademica) ;
 }
 
 section#formacaoACademica p {
+   margin-left: 50px ;
+}
+
+
+section#formacao { 
+    background-color: var(--cor-fundo-formacao) ;
+}
+
+section#formacao p {
     margin-left: 50px;
 }
 
-section#formacacao { 
-    background-color: var(--cor-fundo-formacaoACademica);
+section#experiencia {
+    background-color: var(--cor-fundo-experiencia) ;
 }
 
-section#experiencia {
-    background-color: rgb(218, 127, 141);
+section#experiencia p {
+    margin-left: 50px;
 }
 
 #apresentacao, 
 #formacaoACademica, 
-#formacacao, 
+#formacao, 
 #experiencia, 
-#hardskills, 
-#softskills, 
-#idiomas {
-    padding: var (--padding-padrao-secao);
+#hardskills,
+#softskills,
+#idiomas   {
+    padding: var (--padding-padrao-secao) ;
 }
 
 /* @TODO
@@ -102,15 +122,27 @@ section#experiencia {
     */
 
 section#hardskills {
-    background-color: rgb(250, 154, 170)
+    background-color: var(--cor-fundo-hardskills) ;
+}
+
+section#hardskills p {
+    margin-left: 50px ;
 }
 
 section#softskills {
-    background-color: rgb(249, 171, 183)
+    background-color: var(--cor-fundo-softskills) ;
+}
+
+section#softskills p {
+    margin-left: 50px ;
 }
 
 section#idiomas { 
-    background-color: rgb(241, 152, 166)
+    background-color: var(--cor-fundo-idiomas) ;
+}
+
+section#idiomas p {
+    margin-left: 50px ;
 }
 
 #tecnologias { 
@@ -122,17 +154,22 @@ section#idiomas {
 /* Combinadores*/
 
 article h1 { /* h1 descendente de article*/
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold; /* bold = 700*/
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
+    color:  #141010;
+    --plano-fundo: #BA55D3;
 }
 
 article h2 { /* h2 descendente de article*/
     font-size: 1.5rem;
-    font-weight: 600; /* demi-bol ( quase negrito)*/
-    margin: 0 0 1rem 0
-    margin-left
+    font-weight: 650; /* demi-bol ( quase negrito)*/
+    margin: 0 0 1rem 0;
+    color: #141010;
+}
 
+h2 { 
+    margin-left: 50px; 
 }
 
 .autor {
@@ -146,24 +183,25 @@ article h2 { /* h2 descendente de article*/
 }
 
 .continue-lendo {
-    background-color: #808080;
+    background-color: #000000;
     padding: .5rem 1rem;
     margin-top: 2rem;
     border-radius: 8px;
-    color: #fafad2;
-    text-decoration: none;
-}
+    color: #000000 ;
+    text-decoration: none;    
+}    
 
 .continue-lendo a {
-    color: #fafad2;
+    color: #000000;
     text-decoration: none;
 }
 
 article p {
     text-align: left;
     height: 100px;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     overflow: hidden;
+    color:#000000;
 }
 
 article {
@@ -171,6 +209,7 @@ article {
     background-color: #cecece;
     padding: .5rem 1rem;
     border-radius: 5px;
+    color:#000000;
 }
 
 
@@ -198,10 +237,11 @@ h3{
 
 .lista-tags li {
     display: inline-block;
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 5px;
     border-radius: 4px;
     margin: 6px 0;
+    margin-left: 4px;
 }
 
 .tabela,th,td{
@@ -210,11 +250,12 @@ h3{
     text-align: left;
     margin: 40px;
 }
+
 th{
     border: 1px solid #000000;
-    background-color: #ffffff;
+    background-color:#1C1C1C;
     text-align: center;
 }
 td{
-    border: 1px solid black;
+    border: 1px solid #000000;
 }
