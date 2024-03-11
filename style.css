@@ -102,7 +102,7 @@ section#experiencia {
 }
 
 section#experiencia p {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 #apresentacao, 
@@ -206,7 +206,7 @@ article p {
 
 article {
     width: 30%; /* do pai ( section id="tecnologias") */
-    background-color: #cecece;
+    background-color: #ffffff;
     padding: .5rem 1rem;
     border-radius: 5px;
     color:#000000;
